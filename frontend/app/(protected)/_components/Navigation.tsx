@@ -52,7 +52,7 @@ export default async function Navigation() {
             <form
               action={async () => {
                 "use server";
-                const { signOut } = await import("@/lib/auth");
+                const { signOut } = await import("../../../lib/auth");
                 await signOut({ redirectTo: "/" });
               }}
             >
